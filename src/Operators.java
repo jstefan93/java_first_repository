@@ -11,6 +11,9 @@ public class Operators {
         System.out.println(10.0 / 10.0);
         // Wszystko to możemy uzyskać mając zmienne
 
+        // Operator modulo (reszta z dzielenia)
+        System.out.println(10 % 3);
+
         // Operatory porównania
 
         int numOne = 1;
@@ -20,7 +23,7 @@ public class Operators {
         System.out.println(numOne < numTwo);
         System.out.println(numOne == numTwo);
         // zeby sprawdizć czy wartości są różne należy użyc !=
-        System.out.println(numOne!= numTwo);
+        System.out.println(numOne != numTwo);
 
         // operatory logiczne
         // || - LUB - ZWRACA CZY KTÓRAKOLWIEK STRONA ZWRACA PRAWDĘ
@@ -28,7 +31,7 @@ public class Operators {
         System.out.println(numOne > numTwo || numOne == 1);
         System.out.println(numOne > numTwo || numOne != 1);
         System.out.println(numOne < numTwo || numOne != 1); // prawa strona nie jest już sprawdzana,
-                                                            // bo z lewej strony jest już true
+        // bo z lewej strony jest już true
         // && - I - Zwraca czy po obu stronach jest prawda
         System.out.println(numOne < numTwo && numOne == 1);
         System.out.println(numOne > numTwo && numOne == 1);
