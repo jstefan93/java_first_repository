@@ -1,6 +1,4 @@
 public class User {
-    // z czego składa się klasa?
-    // 1. Pola obiektu - opisują z czego składa się dany obiekt
 
     String firstName;
     String lastName;
@@ -8,8 +6,14 @@ public class User {
     int age;
     boolean isAdult;
 
-    // 2. Metody obiektu - opisują jak dany obiekt działa
-    // Metoda składa się ze zwracanego typu + nazwa metody + ciało metody w środku {}
+    User(String firstNameParam, String lastNameParam, String emailParam, int ageParam)  {
+        firstName = firstNameParam;
+        lastName = lastNameParam;
+        email = emailParam;
+        age = ageParam;
+        isAdult = isUserAdult();
+
+    }
 
     void getFullName() {
         System.out.println(firstName + " " + lastName);
@@ -32,8 +36,6 @@ public class User {
     }
 
 
-    // PRZECIĄŻANIE METOD
-
     void greetings(String name) {
         System.out.println("Hi " + name + ". Nice to see you!");
     }
@@ -49,7 +51,5 @@ public class User {
     int yourAgePlus10(int userAge) {
         return userAge + 10;
     }
-
-
 
 }
