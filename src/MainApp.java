@@ -11,6 +11,17 @@ public class MainApp {
 
         tomek.getAllInfo();
 
+        Bug bug1 = new Bug("Nie działa przycisk", "stefan@byk.pl", 1);
+//        bug1.isBugOpen = false;
+        bug1.getAllBugInfo();
+        int bugPriority = bug1.getBugPriority();
+        System.out.println(bugPriority);
+        bug1.showBugStatus();
+        bug1.showEmail();
+
+
     }
+
+
 
 }
