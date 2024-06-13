@@ -8,7 +8,6 @@ public class Arrays {
 
         // Deklarowanie tablicy
 
-        int[] numbers = new int[10];
 
         String[] names = new String[5];
 
@@ -44,9 +43,22 @@ public class Arrays {
             System.out.println(name);
         }
 
+        int [] numbers = new int [10];
 
+        System.out.println("Długość tablicy: " + numbers.length);
 
+        // inny sposób tworzenia tablic
+
+        int [] newNumbers = {1, 2, 3, 4, 5};
+
+        System.out.println(newNumbers[2]);
+
+        for (String name : names) {
+            System.out.println(name.toUpperCase());
         }
-    }
-
+            
+        }
 }
+
+
+
