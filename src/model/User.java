@@ -2,6 +2,13 @@ package model;
 
 public class User {
 
+    private static int userCounter = 0; // pole statyczne userCounter
+
+    public static int getUserCounter() {
+        return userCounter;
+    }
+
+
     private String firstName;
     private String lastName;
     private String email;
@@ -14,7 +21,7 @@ public class User {
         email = emailParam;
         age = ageParam;
         isAdult = isUserAdult();
-
+        userCounter++; // zwiększamy UserCounter po każdym uruchomieniu klasy o 1
     }
 // Gettery i settery
 

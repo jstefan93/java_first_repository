@@ -34,7 +34,12 @@ public class MainApp {
         bug1.setBugPriority(-1);
         System.out.println(bug1.getBugPriority());
 
+        User u1 = new User("Stefano", "Italiano", "StefanoItaliano@ferrari.it", 12);
+        User u2 = new User("Stefano", "Italiano", "StefanoItaliano@ferrari.it", 12);
+        User u3 = new User("Stefano", "Italiano", "StefanoItaliano@ferrari.it", 12);
+        User u4 = new User("Stefano", "Italiano", "StefanoItaliano@ferrari.it", 12);
 
+        System.out.println(User.getUserCounter());
     }
 
 
